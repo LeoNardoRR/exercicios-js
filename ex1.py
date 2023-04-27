@@ -16,4 +16,4 @@ while(auxiliar <=10): #loop para imprimir 10 resultados
     #O .format é usado para formatar strings. Ele permite a inserção de valores em uma string formatada de maneira fácil e flexível.
     #É o que vai sair dentro das '{}'
 
-    auxiliar = auxiliar + 1 #????
+    auxiliar = auxiliar + 1 #serve para incrementar o valor da variável auxiliar em uma unidade a cada iteração do loop.
