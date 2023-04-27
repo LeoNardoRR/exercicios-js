@@ -3,10 +3,13 @@
 
 def repeticao (list):
 
-    salvo = []
+    val = []
+    rep = []
 
     for i in list:
-        num = int(input('Digite um número: '))
-        if 
-        salvo.append(num)
-    
+        if rep in num:
+            rep.append(num)
+        else:
+            rep.add(num)
+print(f'Valores = {val}')
+print(f'Repetidos = {rep}')
