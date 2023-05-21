@@ -11,6 +11,7 @@ let anos = parseFloat(prompt('Digite a quantidade de anos que você é fumante: 
 let minutos = cigarros * 10
 let horas = (minutos / 60)
 let dias = horas / 24
-let anosEmDias = anos / 365
+let anosEmDias = anos * 365
+let total = dias * anosEmDias
 
-console.log(`A quantidade de dias perdidos é igual a ${anosEmDias} - ${dias}`)
+console.log(`A quantidade de dias perdidos é igual a ${total}`)
