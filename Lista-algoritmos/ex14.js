@@ -5,12 +5,15 @@
 
 const prompt = require('prompt-sync')({sigint: true})
 
+let valorKM = 0.20
+let valorDia = 90
+
 let km = parseFloat(prompt('Digite a quantidade de km percorridos: '))
 let dias = parseFloat(prompt('Digite a quantidade de dias utilizados: '))
 
-let custoDia = 90 * km
-let custoKM = 0.20 * dias
+let custoKM = valorKM * km
+let custoDia = valorDia * dias
 
-let total = custoDia * custoKM
+let total = custoDia + custoKM
 
-console.log(`O total a pagar será igual a: ${total}`)
+console.log(`O custo de quilometragem foi ${custoKM} e o custo dos dias foi ${custoDia} O total a pagar será igual a: ${total}`)
