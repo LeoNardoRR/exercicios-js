@@ -4,21 +4,22 @@
 // que:
 //  - Homens ganham 5% de desconto
 //  - Mulheres ganham 13% de desconto
-const prompt = require('prompt-sync')({sigint: true});
+const prompt = require('prompt-sync')({ sigint: true });
 
-let nome = parseFloat(prompt(`Digite seu nome: `))
-let sexo = parseFloat(prompt( `Digite se você é homem ou mulher: `))
-let valor = parseFloat(prompt(`Digite o valor da sua compra: `))
-let desconto = 0
+let nome = prompt(`Digite seu nome: `);
+let sexo = prompt(`Digite se você é homem ou mulher: `);
+let valor = parseInt(prompt(`Digite o valor da sua compra: `));
 
-if (sexo == 'homem'){
-    let desconto = valor * 0.5 / 100
+if (sexo == 'homem') {
+  let desconto = (5 * valor) / 100
+  let totalHomem = valor - desconto
+  console.log(`Boa tarde ${nome}, como hoje é dia da mulher, temos um desconto especial para todos. Sua compra foi de ${valor} e você teve um desconto de ${desconto} 
+  totalizando ${totalHomem}.`);
+} else if (sexo == 'mulher') {
+  let desconto = (13 * valor) / 100
+  let totalMulher = valor - desconto
+  console.log(`Boa tarde ${nome}, como hoje é dia da mulher, temos um desconto especial para todos. Sua compra foi de ${valor} e você teve um desconto de ${desconto} totalizando 
+  ${totalMulher}.`);
+} else {
+  console.log(`Inválido`);
 }
-else if (sexo == 'mulher'){
-    let desconto = valor * 0.13 / 100
-}
-else{
-    console.log(`Invalido`)
-}
-
-console.log(`Seu desconto foi igual a ${desconto}`)
