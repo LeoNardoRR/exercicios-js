@@ -5,7 +5,7 @@ const prompt = require('prompt-sync')({sigint: true})
 
 let contador = 0 + 3;
 
-while (contador + 3) {
+while (contador - 3) {
   console.log(contador);
   contador--;
 }
