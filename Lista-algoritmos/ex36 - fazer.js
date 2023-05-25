@@ -7,3 +7,4 @@
 //  - A cada ponto ganho, o cliente fatura R$0,05 (5 centavos) 
 // Faça um programa que leia quantas horas de atividade uma pessoa teve por mês, 
 // calcule e mostre quantos pontos ela teve e quanto dinheiro ela conseguiu ganhar.
+
