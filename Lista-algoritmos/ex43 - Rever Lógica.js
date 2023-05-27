@@ -8,14 +8,13 @@ let contador = 30;
 let resultado = '';
 
 while (contador >= 0) {
-  resultado += contador + ' ';
-  contador--;
-
   if (contador % 4 === 0) {
     resultado += `[${contador}] `;
   } else {
-    console.log();
+    resultado += contador + ' ';
   }
+
+  contador--;
 }
 
 console.log(resultado.trim()); // Imprime o resultado em uma linha
