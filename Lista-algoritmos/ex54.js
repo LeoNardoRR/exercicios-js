@@ -19,15 +19,6 @@ for (var contador = 1; contador <= 2; contador++)
 
     pesoTotal += peso
     alturaTotal = alturaTotal + altura
-    
-    // let media = altura / contador
-
-    // console.log(`A media de altura das pessoas do grupo é igual a ${media}: `)
-
-    // if(peso > 90)
-    // {
-    //     console.log(``)
-    // }
 
 }
 

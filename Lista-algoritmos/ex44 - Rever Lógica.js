@@ -5,10 +5,16 @@
 // Digite o incremento: 2
 // Contagem: 3 5 7 9 Acabou!
 
+const prompt = require('prompt-sync')();
+
 let ValorInicial = parseInt(prompt(`Digite o valor inicial: `))
 let ValorFinal = parseInt(prompt(`Digite o valor final: `))
 let incremento = parseInt(prompt(`Digite o incremento: `))
 
+console.log("Contagem:");
 
-let contador = ValorInicial
-let resultado = ''
+for (let contador = ValorInicial; contador <= ValorFinal; contador += incremento) {
+  console.log(contador);
+}
+
+console.log("Acabou!");
