@@ -1,15 +1,12 @@
 // 46) Crie um programa que calcule e mostre na tela o resultado da soma entre 6 + 
 // 8 + 10 + 12 + 14 + ... + 98 + 100
 
-const prompt = require('prompt-sync')()
+const prompt = require('prompt-sync')();
 
-let contador = 0
+let soma = 0;
 
-while(contador >=0){
-    if (contador % 2 === 0) {
-        console.log(contador)
+for (let num = 6; num <= 100; num += 2) {
+    soma += num;
 }
-    else{
-        console.log(`Erro`)
-    }
-}
+
+console.log("A soma é:", soma);
